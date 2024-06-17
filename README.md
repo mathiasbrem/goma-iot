@@ -14,10 +14,10 @@ Goma IoT is a comprehensive system for managing and automating IoT devices. The 
 
 **Features:**
 
-* Support for various IoT communication protocols (MQTT, REST )
+* Support MQTT and REST IoT communication protocols
 * Intuitive web interface for managing devices and visualizing data
 * Visual rule editor to create complex automations
-* Support NoSQL databases
+* Support NoSQL database
 * Email, Webhook and SMS alerts
 * RESTful API for integration with other systems
 * Codes and eletronical projects for ESP8266
@@ -26,7 +26,7 @@ Goma IoT is a comprehensive system for managing and automating IoT devices. The 
 
 **Installation:**
 
-**Prerequisites Gateway :**
+**Prerequisites FOG / Gateway :**
 
 * Raspberry 3B+ or Higher
 * SO: Raspberry 64bits ARM
@@ -55,13 +55,13 @@ git clone https://github.com/mathiasbrem/goma-iot.git
 cd goma-iot
 ```
 
-3. Install Cloud Environment:
+3. Install Cloud Environment ( Over the Cloud Server ):
 
 ```
 sudo sh goma_iot.sh install cloud
 ```
 
-3. Install Gateway Environment:
+3. Install Gateway Environment ( Over the FOG / Gateway Server ):
 
 ```
 sudo sh goma_iot.sh install gateway
@@ -69,8 +69,20 @@ sudo sh goma_iot.sh install gateway
 
 4. Run the server:
 
+* Cloud Server:
 ```
-sudo sh goma_iot.sh start
+sudo sh goma_iot.sh cloud start // start
+sudo sh goma_iot.sh cloud stop // stop
+sudo sh goma_iot.sh cloud restart // restart
+sudo sh goma_iot.sh cloud status // status
+```
+
+* FOG / Gateway Server:
+```
+sudo sh goma_iot.sh gateway start // start
+sudo sh goma_iot.sh gateway stop // stop
+sudo sh goma_iot.sh gateway restart // restart
+sudo sh goma_iot.sh gateway status // status
 ```
 
 **Usage:**
@@ -83,7 +95,7 @@ sudo sh goma_iot.sh start
 
 - Access the web interface at http://ip-of-your-server:5601 to start managing your datastore and manage your indices and machine learinng detectors.
 
-**Gateway Side:**
+**FOG / Gateway Side:**
 
 - Access the web interface at https://ip-of-your-gateway to start managing your IoT Devices..
 
@@ -105,11 +117,10 @@ Eclipse Public License - v 2.0
 
 # References
 
-- The Eclipse Kura Documentation
-- The Eclipse Kapua Documentation
-- The OpenSearch Documentation
-- The Grafana Documentation
-
+- [The Eclipse Kura Documentation](https://eclipse.github.io/kura/docs-release-5.4/)
+- [The Eclipse Kapua Documentation](https://github.com/eclipse/kapua/blob/develop/README.md)
+- [The OpenSearch Documentation](https://opensearch.org/docs/latest/)
+- [The Grafana Documentation](https://grafana.com/docs/grafana-cloud/monitor-infrastructure/integrations/integration-reference/integration-opensearch/)
 
 
 **License:**
