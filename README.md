@@ -16,6 +16,11 @@ Goma IoT is a comprehensive system for managing and automating IoT devices. The 
 * Visualize real-time and historical sensor data
 * Receive alerts about important events and anomalys
 
+**Architecture:**
+
+<img src="./assets/images/architecture.png">
+
+
 **Features:**
 
 * Support MQTT and REST IoT communication protocols
@@ -117,7 +122,21 @@ Eclipse Public License - v 2.0
 - Connect the sensor device to the gateway
 - Connect the gateway to the cloud server
 - Configure the anomaly detection sensor
-- Building the dashboard
+- Building the dashboardß
+
+# WifiManager Device Configuration
+
+<img src="./assets/images/wifimanager.png">
+
+
+# Dashboard Example
+
+<img src="./assets/images/dashboard-grafana-complete-period.png">
+
+# Anomaly Detection Example
+
+<img src="./assets/images/anomaly1.png">
+
 
 # References
 
