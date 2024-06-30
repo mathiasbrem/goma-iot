@@ -2,6 +2,10 @@
 
 **IoT automation system for device and data management**
 
+<img src="./assets/images/bala-de-goma.png" width="95" height="80">
+
+***A sweet glue candy for a dark Eclipse IoT Ecossystem***
+
 **Description:**
 
 Goma IoT is a comprehensive system for managing and automating IoT devices. The name Goma IoT comes from the idea to integrate the solutions, create a script to manage this solutions and bring a out of the box ecossystem to put IoT and Machine Learning anomaly detections in productions with simple steps. It allows you to:
